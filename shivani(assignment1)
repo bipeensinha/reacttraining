@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+      *{
+          margin:0;
+          padding:0;
+          box-sizing:border-box; 
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+
+      h3{
+          font-weight: 600; 
+          margin-bottom: 15px
+        }
+      input{
+             padding: 15px;
+             width: 48%; 
+             font-size: 1rem;
+             margin-bottom: 20px; 
+             background-color: #F6F6F6; 
+             outline: none; 
+             border: none;
+           }
+      button{
+        background-color: #000000;
+        border-radius: 5px; 
+        cursor: pointer;
+        margin-top: 50px ;
+        padding: 10px 30px;
+        border: none; 
+        color: white; 
+        font-size: 1rem; 
+        font-weight: 600;
+      }
+      .sag{display: flex; flex-wrap: wrap;}
+      .sag>input{width: 20px; height: 20px;}
+      .sag span{width: 44%; margin: 0 5px;}
+      
+    </style>
+  </head>
+  <body style="background-color:white;width:100%; height: auto;">
+    <div style="width: fit-content; border: 1px solid #000000;border-radius: 10px;overflow: hidden; margin: 50px auto; width: 50%;">
+
+      <div style="padding: 40px 30px; background-color: #F6F6F6;">
+       <h1 style="font-weight: 500;">Contact Us</h1>
+       <p style="color: #424141; font-weight: 400">If you have any questions please fill out this contact form. Thank you!</p>
+     </div>
+
+     <div style="padding: 40px;">
+     <h3>Full Name</h3>
+     <input type="text" placeholder="First Name*">
+     <input type="text" placeholder="Last Name*">
+
+     <h3>Address</h3>
+     <input style="width: 97%" type="text" placeholder="Street Address">
+     <input style="width:32%" type="text" placeholder="City">
+     <input style="width:32%" type="text" placeholder="State">
+     <input style="width:32%" type="number" placeholder="Zip Code">
+
+     <h3>Contact Information</h3>
+     <input type="text" placeholder="Email*">
+     <input type="text" placeholder="Phone">
+
+     <div>
+       <h3>Select Your Interest</h3>
+         <div class="sag" >
+            <input type="checkbox"><span>Interior and Exterior painting</span>
+            <input type="checkbox"><span>Bar joist ceiling painting</span><br>
+            <input type="checkbox"><span>Power washing and Caulking</span>
+            <input type="checkbox"><span>Sand Blasting</span><br>
+            <input type="checkbox"><span>Wallcovering</span>
+            <input type="checkbox"><span>Concrete crack repair and polishing</span><br>
+            <input type="checkbox"><span>Line Striping</span>
+            <input type="checkbox"><span>Confined space work</span><br>
+            <input type="checkbox"><span>Rust Encapsulation</span>
+            <input type="checkbox"><span>Storage silo painting</span><br>
+            <input type="checkbox"><span>Others</span><br>
+         </div>
+      </div>
+
+      <h3>Questions / Comments</h3>
+      <textarea name="Message" id="" rows="5" placeholder="Meassage*" style="padding: 5px;font-size: 0.9rem;margin-bottom: 80px;width: 100%; background-color: #F6F6F6; border: none;"></textarea><br>
+      <input style="width: 20px;
+        height: 20px;" type="checkbox"><span style="margin: 0 5px;">Update me on deals and special offers via email.</span><br>
+       <button>Submit</button>          
+    </div>
+  </body>
+</html>
